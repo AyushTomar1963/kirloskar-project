@@ -90,7 +90,7 @@ function App() {
     setServerMessage("Submitting inspection log...")
 
     try {
-      const response = await fetch("/log-inspection", {
+      const response = await fetch("https://factory-project-pcim.onrender.com/api/log-inspection", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
